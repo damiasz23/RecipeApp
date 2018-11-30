@@ -1,0 +1,25 @@
+{
+  "name": "recipeapp",
+  "version": "1.0.0",
+  "description": "recipe project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://damiasz23:damian23@github.com/damiasz23/RecipeApp.git"
+  },
+  "author": "dg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damiasz23/RecipeApp/issues"
+  },
+  "homepage": "https://github.com/damiasz23/RecipeApp#readme",
+  "devDependencies": {
+    "webpack": "^4.26.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
