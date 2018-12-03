@@ -3780,9 +3780,34 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
   !*** ./src/js/index.js ***!
   \*************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nError: Cannot find module '@babel/core'\\n babel-loader@8 requires Babel 7.x (the package '@babel/core'). If you'd like to use Babel 6.x ('babel-core'), you should install 'babel-loader@7'.\\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)\\n    at Function.Module._load (internal/modules/cjs/loader.js:506:25)\\n    at Module.require (internal/modules/cjs/loader.js:636:17)\\n    at require (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\v8-compile-cache\\\\v8-compile-cache.js:159:20)\\n    at Object.<anonymous> (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\babel-loader\\\\lib\\\\index.js:10:11)\\n    at Module._compile (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\v8-compile-cache\\\\v8-compile-cache.js:178:30)\\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\\n    at Module.load (internal/modules/cjs/loader.js:598:32)\\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\\n    at Module.require (internal/modules/cjs/loader.js:636:17)\\n    at require (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\v8-compile-cache\\\\v8-compile-cache.js:159:20)\\n    at loadLoader (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\loader-runner\\\\lib\\\\loadLoader.js:13:17)\\n    at iteratePitchingLoaders (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:169:2)\\n    at runLoaders (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:362:2)\\n    at NormalModule.doBuild (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:265:3)\\n    at NormalModule.build (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:412:15)\\n    at Compilation.buildModule (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:633:10)\\n    at factory.create (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:882:14)\\n    at factory (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:405:6)\\n    at hooks.afterResolve.callAsync (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:155:13)\\n    at AsyncSeriesWaterfallHook.eval [as callAsync] (eval at create (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:32:10), <anonymous>:6:1)\\n    at AsyncSeriesWaterfallHook.lazyCompileHook (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\tapable\\\\lib\\\\Hook.js:154:20)\\n    at resolver (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:138:29)\\n    at process.nextTick (C:\\\\Users\\\\dgawlak\\\\Desktop\\\\RecipeApp\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:342:9)\\n    at process._tickCallback (internal/process/next_tick.js:61:11)\");\n\n//# sourceURL=webpack:///./src/js/index.js?");
+"use strict";
+eval("\n\nvar _Search = __webpack_require__(/*! ./modules/Search */ \"./src/js/modules/Search.js\");\n\nvar _Search2 = _interopRequireDefault(_Search);\n\nvar _searchView = __webpack_require__(/*! ./views/searchView */ \"./src/js/views/searchView.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nconsole.log('Using imported func ' + (_searchView.ID, 2) + ' and ' + (0, _searchView.mult)(4, 6) + '. ' + _Search2.default + '.');\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/Search.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/Search.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = 'I am an exported string.';\n\n//# sourceURL=webpack:///./src/js/modules/Search.js?");
+
+/***/ }),
+
+/***/ "./src/js/views/searchView.js":
+/*!************************************!*\
+  !*** ./src/js/views/searchView.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar add = exports.add = function add(a, b) {\n  return a + b;\n};\nvar mult = exports.mult = function mult(a, b) {\n  return a * b;\n};\nvar ID = exports.ID = 23;\n\n//# sourceURL=webpack:///./src/js/views/searchView.js?");
 
 /***/ }),
 

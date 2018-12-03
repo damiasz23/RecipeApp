@@ -1,4 +1,3 @@
-// Global app controller
-import x from './test';
-const num = 23;
-console.log(`I import ${x} from another module1! Varible num is: ${num}`);
+import str from './modules/Search';
+import {add, mult, ID} from './views/searchView';
+console.log(`Using imported func ${ID, 2} and ${mult(4, 6)}. ${str}.`);
