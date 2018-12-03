@@ -1,11 +1,23 @@
-import axios from 'axios';
+import Search from './modules/Search';
 
 
-async function getRes(query) {
-    const key = 'd9696833f4ca33270a750b41ef7e770a';
-    const res = await axios(`https://www.food2fork.com/api/search?key=${key}&q=${query}`);
-    console.log(res);
+const state = {};
+
+const controlSearch = async () => {
+    const query = 'pizza' // TODO in view 
+
+    if (query) {
+        state.search = new Search(query);
+        // UI fo result
+
+        //Search for reciepies
+        await state.search.getRes();
+        //Render results on UI
+        console.log(state.search.result);
+    }
 }
-getRes('pizza');
 
-
+document.querySelector('.search').addEventListener('submit', e => {
+    e.preventDefault();
+    controlSearch();
+});
