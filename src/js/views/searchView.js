@@ -41,6 +41,6 @@ const renderRecipie = recipe => {
                 elements.searchResultList.insertAdjacentHTML('beforeend', markup);
 };
 
-export const rendderResults = recipes => {
+export const renderResults = recipes => {
     recipes.forEach(renderRecipie);
 };

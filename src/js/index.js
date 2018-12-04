@@ -7,7 +7,6 @@ const state = {};
 
 const controlSearch = async () => {
     const query = searchView.getInput();
-     console.log(query); 
 
     if (query) {
         state.search = new Search(query);
@@ -17,7 +16,8 @@ const controlSearch = async () => {
         //Search for reciepies
         await state.search.getRes();
         //Render results on UI
-        searchView.rendderResults(state.search.result);
+        searchView.renderResults(state.search.result);
+        
     }
 }
 
