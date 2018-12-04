@@ -1,6 +1,6 @@
 import Search from './modules/Search';
 import * as searchView from './views/searchView';
-import { elements, renderLoader } from './views/base';
+import { elements, renderLoader, clearLoader } from './views/base';
 
 
 const state = {};
@@ -17,6 +17,7 @@ const controlSearch = async () => {
         //Search for reciepies
         await state.search.getRes();
         //Render results on UI
+        clearLoader();
         searchView.renderResults(state.search.result);
         
     }
